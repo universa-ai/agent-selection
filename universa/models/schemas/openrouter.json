@@ -1,0 +1,12 @@
+{
+    "base_class": "OpenRouterOpenAI",
+    "model_dir": "schemas/openai",
+    "schemas": {
+        "input_schema": "OpenAIInput",
+        "output_schema": "OpenAIOutput",
+        "message_schema": "OpenAIMessage"
+    },
+    "model_name": "openai/gpt-4o",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key": null
+}

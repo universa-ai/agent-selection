@@ -1,0 +1,12 @@
+{
+    "base_class": "OpenAIVision",
+    "model_dir": "schemas/vision",
+    "schemas": {
+        "input_schema": "OpenAIVisionInput",
+        "output_schema": "OpenAIOutput",
+        "message_schema": "OpenAIVisionMessage"
+    },
+    "model_name": "openai/gpt-4o-mini",
+    "base_url": "https://openrouter.ai/api/v1",
+    "api_key": null
+}

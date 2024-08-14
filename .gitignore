@@ -1,0 +1,12 @@
+# Python
+*.py[cod]
+__pycache__/*
+.venv/*
+
+# General
+.DS_Store
+.env
+.vscode/*
+
+# Testing
+*.ipynb
