@@ -168,6 +168,6 @@ This case study aimed to show how important it is to understand other parameters
 
 ## Contact
 
-Discussions are open on our repository - whether you need some quick help, want to share your thoughts or just connect with other developers, jump in [here](https://github.com/universa-code/agent-selection/discussions) and let's talk!
+Discussions are open on our repository - whether you need some quick help, want to share your thoughts or just connect with other developers, jump in [here](https://github.com/universa-ai/agent-selection/discussions) and let's talk!
 
 You can also reach us out at [challenge@universa.org](mailto:challenge@universa.org)
