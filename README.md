@@ -1,5 +1,12 @@
 # Agent Selection Challenge - Universa AI
 
+<div align="center">
+<h3>Deadline for submission: 30.10.24</h3>
+<h4>Submit codebase via <a href="mailto:challenge@universa.org">official email</a</h4>
+</div>
+
+---
+
 Universa AI team is currently working on a proof-of-concept of a multi-agent network. Core idea of such network is to provide agents with an environment to be deployed in and communicate with each other in order to complete tasks, such as user-given problems. One of the core challenges of this project is to create a system of selecting the best agents for a given query.
 
 > [!NOTE]
