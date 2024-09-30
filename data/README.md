@@ -1,6 +1,6 @@
 # Algorithm Testing
 
-In this directory you will find multiple agents with different descriptions and parameters on which you can test your selection algorithms, get to know the repository and start building your solution.
+In this directory you will find multiple agent examples with different descriptions and parameters on which you can test your selection algorithms, get to know the repository and start building your solution.
 
 Each agent is presented in a JSON format which can be loaded into an agent object via a simple class method:
 
