@@ -1,8 +1,8 @@
 <div align="center">
 <h1>Agent Selection Challenge</h1>
 
-<h3>Deadline for submission: 03.11.24</h3>
-<h4>Submit codebase via <a href="mailto:challenge@universa.org">official email</a</h4>
+<h3>Deadline for submission: 04.11.24</h3>
+<h4>Submit your repositories via <a href="mailto:challenge@universa.org">official email</a</h4>
 </div>
 
 ---
