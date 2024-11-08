@@ -2,7 +2,7 @@
 This script shows how the case studies (see README.md) was calculated.
 """
 
-import _import_universa
+import _import_root  # noqa : E402
 import uuid
 
 from universa.memory.chromadb.chromadb import ChromaDB

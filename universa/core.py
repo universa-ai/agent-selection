@@ -24,11 +24,11 @@ class Executable(ABC):
     output_schema: Type[Schema]
     message_schema: Type[Schema]
 
-    def register(self) -> None:
+    def register(self, object_id: Optional[str] = None) -> None:
         """
         Register the model in the registry.
         """
-        self.object_id = generate_id()
+        self.object_id = object_id or generate_id()
         self.logger = get_logger(self.__class__.__name__)
 
     def get_id(self) -> str:
@@ -71,6 +71,7 @@ class Executable(ABC):
         """
         # Prepare the schema
         _serialized = {
+            "object_id": self.object_id,
             "base_class": self.__class__.__name__,
             "model_dir": self._get_model_dir(),
             "schemas": {}

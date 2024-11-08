@@ -8,8 +8,7 @@ embedding function. Please refer to the official ChromaDB documentation to
 learn more about different methods to storing and querying data.
 """
 
-import _import_universa
-import json
+import examples._import_root as _import_root  # noqa : E402
 import uuid
 
 from universa.memory.chromadb.chromadb import ChromaDB

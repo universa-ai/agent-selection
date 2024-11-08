@@ -1,4 +1,4 @@
-"""Script only for importing universa module in examples folder."""
+"""Script only for adding root directory to import universa."""
 import sys
 import os.path as op
 

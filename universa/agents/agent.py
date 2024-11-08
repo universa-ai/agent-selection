@@ -22,7 +22,7 @@ from ..core import (
 from ..schema import Schema
 from ..tools import ToolCall
 
-from ..utils._types import *
+from ..utils._types import Any, Optional, Dict, Union, Self
 from ..utils.imports import get_parent_path
 from ..utils.execution import request_user_input
 
@@ -61,13 +61,14 @@ class BaseAgent(Executable):
         auto_reinvoke: bool = True,
         memory_window: int = 5,
         extraction_boundary: Optional[Dict[str, str]] = None,
+        object_id: Optional[str] = None
     ) -> None:
         
         # Basic agent information
         self.name = name
         self.description = description
         self.system_prompt = system_prompt
-        self.register()  # create ID & logger
+        self.register(object_id=object_id)  # create ID & logger
 
         # Model & tools
         self.model: ToolCaller = model or OpenAI.from_json(
@@ -292,7 +293,7 @@ class BaseAgent(Executable):
         """
         return self.chat_history.messages[-1]
 
-    def to_json(self, save_path: str | None = None, exist_ok: bool = False) -> SerializedType:
+    def to_json(self, save_path: str | None = None, exist_ok: bool = False, add_chat_history: bool = False) -> SerializedType:
         """
         Override executable `to_json` method to include additional agent information.
         """
@@ -304,8 +305,9 @@ class BaseAgent(Executable):
             "popularity": self.popularity,
             "rated_responses": self.rated_responses,
             "average_rating": self.average_rating,
-            "chat_history": self.chat_history.serialize(),
         })
+        if add_chat_history:
+            _serialized["chat_history"] = self.chat_history.serialize()
 
         if save_path:
             self.save_json(
@@ -329,9 +331,9 @@ class BaseAgent(Executable):
         input_cost = constructor_args.pop("input_cost")
         output_cost = constructor_args.pop("output_cost")
         popularity = constructor_args.pop("popularity")
-        chat_history = constructor_args.pop("chat_history")
         rated_responses = constructor_args.pop("rated_responses")
         average_rating = constructor_args.pop("average_rating")
+        chat_history = constructor_args.pop("chat_history", None)
         instance = cls(**constructor_args)
 
         # Update agent parameters
@@ -343,19 +345,19 @@ class BaseAgent(Executable):
         instance.average_rating = average_rating
         
         # Remove first system message from the chat history
-        if chat_history[0]["message"]["role"] == "system":
+        if chat_history is not None and chat_history[0]["message"]["role"] == "system":
             chat_history.pop(0)
 
-        # Deserialize chat history
-        chat_history = ChatHistory.deserialize(
-            chat_history,
-            message_schema=instance.message_schema
-        )
-        for message, metadata in zip(chat_history.messages, chat_history.metadata):
-            instance.chat_history.save_message(
-                message, 
-                metadata=metadata
+            # Deserialize chat history
+            chat_history = ChatHistory.deserialize(
+                chat_history,
+                message_schema=instance.message_schema
             )
+            for message, metadata in zip(chat_history.messages, chat_history.metadata):
+                instance.chat_history.save_message(
+                    message, 
+                    metadata=metadata
+                )
 
         return instance
     

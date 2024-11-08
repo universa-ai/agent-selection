@@ -1,4 +1,5 @@
 {
+    "uuid": "2aba313d-ef24-4b92-b0e2-21cbc0107c8a",
     "base_class": "BaseAgent",
     "model_dir": null,
     "schemas": {},

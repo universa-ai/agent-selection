@@ -1,0 +1,122 @@
+[
+    {
+        "query": "How do I center a div with CSS?",
+        "agent": "Web Developer",
+        "object_id": "cf755959-9964-4e98-ba04-146598620c0e"
+    },
+    {
+        "query": "Design a RESTful API structure for a social media app",
+        "agent": "Full Stack Developer",
+        "object_id": "b1fa799e-1b14-4cff-8fa3-78f8aff1c41b"
+    },
+    {
+        "query": "Design a microservices architecture for an e-commerce platform handling 1M daily users",
+        "agent": "Web Architect",
+        "object_id": "9e178cb7-131e-4195-824f-176559eaf372"
+    },
+    {
+        "query": "How to preprocess categorical data?",
+        "agent": "ML Engineer",
+        "object_id": "b02e2b7b-7c1e-43ec-8a5d-c9b1ee21b043"
+    },
+    {
+        "query": "Set up distributed training pipeline with PyTorch",
+        "agent": "Deep Learning Engineer",
+        "object_id": "257a4a59-ccc8-4285-b9b7-83af2131cbdd"
+    },
+    {
+        "query": "Implement the latest Vision Transformer architecture",
+        "agent": "Machine Learning Researcher",
+        "object_id": "32c34d08-c108-4f5d-92bd-a311243eb134"
+    },
+    {
+        "query": "How to read a company's income statement?",
+        "agent": "Market Analyst",
+        "object_id": "b0227ed6-6034-464e-b3bc-6bc38c2e8eab"
+    },
+    {
+        "query": "Design a mean reversion trading strategy",
+        "agent": "Quantitative Analyst",
+        "object_id": "5f08e1fa-c98b-4921-a771-8d5669c9f4d9"
+    },
+    {
+        "query": "Calculate carbon intensity of portfolio",
+        "agent": "Financial Analyst",
+        "object_id": "6e9ee84e-da67-41e7-a409-28455920d289"
+    },
+    {
+        "query": "Explain transformer architecture basics",
+        "agent": "AI Researcher",
+        "object_id": "a4a6546b-0ec4-4626-9dea-baf87a183068"
+    },
+    {
+        "query": "Derive theoretical bounds for AI capability limits",
+        "agent": "AGI Researcher",
+        "object_id": "6077da73-2313-4122-8fc0-c9d5bcf5886a"
+    },
+    {
+        "query": "Design distributed inference pipeline",
+        "agent": "AI Architect",
+        "object_id": "79515e96-4ed9-455d-9ce3-706eb647ef0f"
+    },
+    {
+        "query": "Explain quantum superposition",
+        "agent": "Quantum Physicist",
+        "object_id": "6ee1fe4f-2d92-466a-abd1-6b50c5e12ee2"
+    },
+    {
+        "query": "Design a quantum error correction code",
+        "agent": "Quantum Computing Researcher",
+        "object_id": "48070d73-8cec-4c63-8e6b-9b8798e9278e"
+    },
+    {
+        "query": "Design calibration protocol for quantum gates",
+        "agent": "Quantum Engineer",
+        "object_id": "f046ddc1-15c2-40f4-a0bd-b70c7ce30e16"
+    },
+    {
+        "query": "How to implement basic player movement in Unity?",
+        "agent": "Game Developer",
+        "object_id": "1d70cdbf-1148-40c8-aa7c-0d417a658d1f"
+    },
+    {
+        "query": "Design ECS architecture for large worlds",
+        "agent": "Engine Developer",
+        "object_id": "37450c2f-db7f-4b6c-867a-a86f2774ff01"
+    },
+    {
+        "query": "Design scalable inventory system",
+        "agent": "Game Tech Director",
+        "object_id": "d8928243-95f2-44ee-90fd-0a946f5359ae"
+    },
+    {
+        "query": "How to handle exceptions and system calls in Python?",
+        "agent": "Python Developer",
+        "object_id": "deb24950-4338-4dcf-8c8f-5c146a002b90"
+    },
+    {
+        "query": "Design a custom async event loop",
+        "agent": "Python Systems Architect",
+        "object_id": "e5ebb4c3-88db-4c8c-b925-c695735c7a5c"
+    },
+    {
+        "query": "Setup authentication system with JWT",
+        "agent": "Python Backend Developer",
+        "object_id": "a4e4b9b4-dcda-4f55-8b84-f1647371d93b"
+    },
+    {
+        "query": "Design efficient route for Europe trip",
+        "agent": "Travel Guide",
+        "object_id": "d48b024f-fcda-4f6d-84c5-3cbf2c974f23"
+    },
+    {
+        "query": "Explain cultural etiquette in Middle East",
+        "agent": "Culture Explorer",
+        "object_id": "76ce6755-128d-476f-9f20-741df1e7f8aa"
+    },
+    {
+        "query": "Design comprehesive guide for Kilimanjaro climb",
+        "agent": "Adventure Expert",
+        "object_id": "aae39d32-8009-4ebc-8713-ec6afce7204b"
+    }
+]

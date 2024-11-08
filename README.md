@@ -1,11 +1,14 @@
 <div align="center">
 <h1>Agent Selection Challenge</h1>
 
-<h3>Deadline for submission: 11.11.24</h3>
-<h4>Submit your repositories via <a href="mailto:challenge@universa.org">official email</a</h4>
+<h3>Deadline for submission: 11.11.24 23:59 CET</h3>
+<h4>Submit codebase via <a href="mailto:challenge@universa.org">official email</a</h4>
 </div>
 
 ---
+
+> [!IMPORTANT]
+> Deadline is near! Please follow the [Submission](#submission) instructions to submit your solution.
 
 Universa AI team is currently working on a proof-of-concept of a multi-agent network. Core idea of such network is to provide agents with an environment to be deployed in and communicate with each other in order to complete tasks, such as user-given problems. One of the core challenges of this project is to create a system of selecting the best agents for a given query.
 
@@ -33,7 +36,7 @@ Each agent is provided with several additional attributes to help you get starte
 
 Except for these attributes, each agent has a `description`, `name` and `system_prompt`.
 
-For the sake of this challenge, you can **only use the above parameters** in your selection algorithm.
+For the sake of this challenge, you can only use these parameters in your selection algorithm.
 
 ## Criteria
 
@@ -43,13 +46,9 @@ The solutions to this challenge will be assessed based on the following criteria
 * **Efficiency of the system** - How much computational cost is required to perform the agent selection?
 * **Code clarity and compatibility** - How well the code is structured and whether it is compatible with the provided codebase?
 
-As the network grows, the number of agents will increase, making the selection process more complex:. It is important to acknowledge the limitations and difficulties that this brings to the table, namely:
+As the network grows, the number of agents will increase, making the selection process more complex. It is important to acknowledge the limitations and difficulties that this brings to the table, namely:
 * **New agents** - How to make sure that new agents have a chance to be chosen? If our ranking algorithm promotes agents that receive the best ratings or biggest number of queries, how to acknowledge new agents and give them a head start?
 * **Efficiency of scale** - How to make sure that the system is efficient as the number of agents grows? If our ranking system needs to recalculate the relations between agents each time we add a new agent to the group, this will greatly hinder the system's scalability. How to prevent that from happening?
-
-## Benchmark
-
-We are still working on a full version of a benchmark dataset to test your selection algorithms, but we do provide agents data and queries with which you can start working on your algorithms. You can find them in the [`data`](./data) directory.
 
 ## Codebase
 
@@ -62,6 +61,17 @@ You can find documentation on more complex parts of the codebase in the [docs](.
 ## Case studies
 
 To build a better intuition for this challenge, we encourage you to go through the [`CASE_STUDIES.md`](./CASE_STUDIES.md) document.
+
+## Submission
+
+Your solution should be submitted either as a .zip archive or a link to a GitHub repository. Please mind that we will be assessing solutions based on the following criteria:
+* **Benchmark results** - How your algorithm performed on the provided [benchmark](./benchmark) and how much time it took for it to run
+* **Code clarity & quality** - Structure, clarity and ingenuity of your code
+* **Report** - A report containing your thoughts on the challenge, the approach you took and describing clearly your solution (report can be contained in the README.md of your repository)
+
+We also encourage you to provide your own becnhamrking examples that showcase the quality of the result.
+
+Good luck! :tada:
 
 ## Contact
 

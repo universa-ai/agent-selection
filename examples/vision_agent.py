@@ -1,4 +1,4 @@
-import _import_universa
+import _import_root  # noqa : E402
 
 from PIL import Image
 

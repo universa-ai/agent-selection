@@ -1,4 +1,4 @@
-import _import_universa
+import _import_root  # noqa : E402
 from universa.agents import BaseAgent
 from universa.models.openrouter import OpenRouterOpenAI
 
