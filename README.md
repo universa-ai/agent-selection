@@ -1,8 +1,10 @@
 <div align="center">
 <h1>Agent Selection Challenge</h1>
 
-<h3>Deadline for submission: 11.11.24 23:59 CET</h3>
-<h4>Submit codebase via <a href="mailto:challenge@universa.org">official email</a</h4>
+<h3>Challenge is closed - thank you for your interest!</h3>
+
+<h3><s>Deadline for submission: 11.11.24 23:59 CET</s></h3>
+<h4><s>Submit codebase via <a href="mailto:challenge@universa.org">official email</a></s></h4>
 </div>
 
 ---
